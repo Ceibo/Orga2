@@ -1,0 +1,1 @@
+extern void imprime_data (int a, double f, char* s);int main(){    char s[] = "HOLAsduogurgsdsfiognrgCHAU";    imprime_data(5, 7.343589475, s);    return 0;}
