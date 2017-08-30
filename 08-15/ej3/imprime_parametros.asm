@@ -28,6 +28,7 @@ section .text
     mov rdi, rcx; Pongo en rdi el msg que lo guarde en rcx (era un puntero). Ahora puedo pisar rcx tranquilo despues
     
     sub rsp, 8; Esto es para que la pila quede alineada a 16 cuando llame a la funcion printf de C.
+    mov rax, 1; Pongo en rax la cantidad de parametros float de la funcion
     call printf; Por que si no, cuando ejecute printf lo haria con la pila desalineada en 16 y se romperia todo
     add rsp, 8; Recupero el lugar que use para alinear al pila
     ret
